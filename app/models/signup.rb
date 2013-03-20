@@ -10,7 +10,7 @@ class Signup < ActiveRecord::Base
   before_create :set_contacted
 
   def set_contacted
-    self.contacted = nil
+    self.contacted_at = nil
     # Fix to prevent rollback due to false return in previous statement.
     true
   end
