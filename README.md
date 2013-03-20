@@ -1,5 +1,5 @@
 # Rails Lead tracker
-Track signups for your landingpages in an easy way. We built the logic, you only need to customize the views and styles. It's perfect for testing an MVP or marketing some other idea.
+Track signups for your landingpages in an easy way. We built the logic, you only need to customize the views and styles. Plus it helps you staying organized. Features a simple admin backend. It's perfect for testing an MVP or marketing some other idea.
 
 [Owlaser Demo](http://owlaser.com)
 
