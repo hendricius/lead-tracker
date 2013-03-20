@@ -1,4 +1,4 @@
-# Rails lead tracker
+# Rails Lead tracker
 Track signups for your landingpages in an easy way. We built the logic, you only need to customize the views and styles. It's perfect for testing an MVP or marketing some other idea.
 
 [Owlaser Demo](http://owlaser.com)
@@ -15,15 +15,15 @@ It's a normal rails app, start it:
 --------------
 
 ## Set the following environment variables
-* The domain where you will host the app **
+The domain where you will host the app:
 
     export VDOMAIN="localhost:3000"
 
-** The password to access admin pages **
+The password to access admin pages:
 
     export VTOKEN="mysecretpassword"
 
-** For heroku use: **
+For heroku use:
 
     heroku config:add myvariable="value"
 
@@ -31,10 +31,12 @@ It's a normal rails app, start it:
 
 ## Customizing
 
-landing.css.sass: This is where your landing page styles should go to.
-home.html.slim: Your custom code for the landingpage.
+* landing.css.sass: This is where your landing page styles should go to.
+* home.html.slim: Your custom code for the landingpage.
 
 
 ## Credits
-(Mark Hagethorn)[https://github.com/Malachute]
-(Hendrik Kleinwaechter)[https://github.com/hendricius]
+
+[Mark Hagethorn](https://github.com/Malachute)
+
+[Hendrik Kleinwaechter](https://github.com/hendricius)
