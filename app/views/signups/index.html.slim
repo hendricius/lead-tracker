@@ -1,0 +1,27 @@
+h1 Listing signups
+p.lead Total Signups: #{Signup.count}
+p.lead Signups today: #{Signup.today.count}
+p.lead Signups yesterday: #{Signup.yesterday.count}
+
+table.table.table-striped
+  thead
+    tr
+      th ID
+      th Email
+      th Country
+      th Signed Signed up at
+      th Contacted?
+      th Controls
+
+  tbody
+    - @signups.each do |signup|
+      tr
+        td = signup.id
+        td = signup.email
+        td = signup.country
+        td = l signup.created_at
+        td = check_contacted signup.contacted_at
+        td
+          .btn-group
+            = render "toggle_contacted", signup: signup
+            = link_to 'Destroy', signup_path(signup, token: token), :confirm => 'Are you sure?', :method => :delete, class: "btn btn-danger"

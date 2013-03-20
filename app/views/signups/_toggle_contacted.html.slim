@@ -1,0 +1,7 @@
+= link_to toggle_contacted_signup_path(signup, token: token),
+  class: "btn hidden-phone", method: :post do
+  - if signup.contacted_at
+    i.icon-remove
+  - else
+    i.icon-ok
+  span Contacted

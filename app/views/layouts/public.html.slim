@@ -1,0 +1,31 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta content="width=device-width, initial-scale=1.0" name="viewport"
+    meta content="My keywords" name="keywords"
+    meta content="My description" name="description"
+    meta content="yes" name="apple-mobile-web-app-capable"
+    link rel="icon" href="/assets/favicon.ico" type="image/x-icon"
+    link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"
+    link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,100,400italic" rel="stylesheet" type="text/css"
+    title My title
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    javascript:
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'MY GA ID']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    = csrf_meta_tags
+  body
+    .container
+      .row
+        .span12
+          = render "layouts/notices"
+          = yield

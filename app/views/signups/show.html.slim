@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Email:
+  = @signup.email
+p
+  strong Phone:
+  = @signup.phone
+p
+  strong Ip:
+  = @signup.ip
+p
+  strong Country:
+  = @signup.country
+
+= link_to 'Edit', edit_signup_path(@signup)
+'|
+= link_to 'Back', signups_path
